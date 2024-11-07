@@ -25,12 +25,13 @@
             </ul>
         </section>
         
-       <section class="contact-form">
+      <section class="contact-form">
     <h3>Send us a message</h3>
     <p>Use the form below to reach us directly.</p>
     <form action="https://formsubmit.co/info@ilsatec.com" method="POST">
-        <!-- Replace your_email@example.com with your actual email address -->
+        <!-- Email setup and redirect URL to thank you page -->
         <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_next" value="https://ilsatec.com/thankyou.html">
         
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
@@ -44,6 +45,7 @@
         <button type="submit">Send</button>
     </form>
 </section>
+
         
        <section class="map">
     <h3>Find Us</h3>
