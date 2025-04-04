@@ -1,28 +1,18 @@
-// Animate Counters on Scroll
-document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.counter');
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const counter = entry.target;
-                const target = parseInt(counter.getAttribute('data-target'));
-                let count = 0;
-                const speed = 50; // Animation speed
-
-                const updateCounter = () => {
-                    if (count < target) {
-                        count += Math.ceil(target / speed);
-                        counter.textContent = count > target ? target : count;
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                updateCounter();
-                observer.unobserve(counter); // Stop observing after animation
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll(".counter");
+    counters.forEach(counter => {
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target");
+            const count = +counter.innerText;
+            const speed = target / 100;
+            
+            if (count < target) {
+                counter.innerText = Math.ceil(count + speed);
+                setTimeout(updateCount, 30);
+            } else {
+                counter.innerText = target;
             }
-        });
-    }, { threshold: 0.5 });
-
-    counters.forEach(counter => observer.observe(counter));
+        };
+        updateCount();
+    });
 });
