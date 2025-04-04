@@ -26,10 +26,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     counters.forEach(counter => observer.observe(counter));
 });
-
-// Toggle Service Cards on Touch for Mobile
-document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('touchstart', () => {
-        card.classList.toggle('flipped');
-    });
-});
