@@ -3,77 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iLSATEC - Innovating Telecom & IT</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+    <title>iLSATEC - Telecom Solutions in 5G, GSM-R, IoT, and Project Management</title>
+    <style>
+        /* General Styles */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f4f8; color: #333; }
+        header { background-color: #003366; color: #e6f7ff; padding: 40px 20px; text-align: center; } /* Added padding and lighter color */
+        
+        /* Navigation Bar Styles */
+        nav { background-color: #00509e; padding: 10px; text-align: center; }
+        nav a { color: white; text-decoration: none; padding: 14px 20px; margin: 0 10px; font-weight: bold; }
+        nav a:hover { background-color: #003366; border-radius: 5px; }
+        
+        /* Content Styles */
+        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        h1 { color: #e6f7ff; } /* Lighter color for better contrast */
+        h2 { color: #00509e; }
+        
+        /* Specialization Section */
+        .specialization { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-top: 30px; }
+        .specialization-item { flex: 1; min-width: 250px; text-align: center; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+        
+        /* Specialization Headings */
+        .specialization-item h3 {
+            color: #003366; /* Darker blue for headings */
+            margin-bottom: 15px; /* Adding space below the heading */
+            font-size: 1.5em; /* Slightly larger font size for better visibility */
+        }
+
+        /* Footer */
+        footer { background-color: #003366; color: #fff; text-align: center; padding: 10px; margin-top: 30px; }
+    </style>
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header">
-        <nav class="nav">
-            <h1 class="logo">iLSATEC</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <header>
+        <h1>Welcome to iLSATEC</h1>
+        <p>Advanced Telecom Solutions in 5G, FRMCS, IoT, and Project Management</p>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Innovating the Future of Telecom & IT</h1>
-            <p>Transforming connectivity with **5G, GSM-R, IoT, and Cloud Solutions**.</p>
-            <a href="#services" class="cta-button">Explore Our Services</a>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <h2>Our Expertise</h2>
-        <div class="service-grid">
-            <div class="service">
-                <h3>5G & GSM-R</h3>
-                <p>Advanced railway & mobile communication solutions, enabling high-speed connectivity.</p>
+    
+    <div class="container">
+        <section>
+            <h2>Our Expertise</h2>
+            <p>At iLSATEC, we specialize in telecom consulting and solutions to empower industries with advanced communication systems. We offer:</p>
+            <div class="specialization">
+                <div class="specialization-item">
+                    <h3>GSM-R Solutions</h3>
+                    <p>Robust GSM-R solutions for railway communication systems, ensuring seamless operations and connectivity.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>IoT Testing</h3>
+                    <p>Comprehensive IoT testing services to validate device functionality, network performance, and data integrity.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Telecom Lab Setup</h3>
+                    <p>Complete lab setup solutions, including customized environments for optimal testing.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Installation & Commissioning</h3>
+                    <p>Professional installation and commissioning to get your network infrastructure up and running quickly.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Testing as a Service</h3>
+                    <p>Flexible testing services tailored to your needs, covering everything from GSM-R to web applications.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Project Management & Agile</h3>
+                    <p>Experienced in agile methodologies, we ensure projects are completed on time, using tools like Jira and Confluence.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Git & DevOps</h3>
+                    <p>End-to-end DevOps services, utilizing Git for version control to streamline development and operations.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>Cybersecurity</h3>
+                    <p>Advanced cybersecurity solutions to protect your network and data from potential threats and vulnerabilities.</p>
+                </div>
+                <div class="specialization-item">
+                    <h3>IP Networking</h3>
+                    <p>Expertise in IP networking to support efficient, reliable communication systems for modern infrastructure.</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>IoT & Edge Computing</h3>
-                <p>Smart device integration, IoT testing, and low-latency edge computing solutions.</p>
-            </div>
-            <div class="service">
-                <h3>Cloud & OpenStack</h3>
-                <p>Scalable cloud infrastructure and OpenStack solutions for modern IT environments.</p>
-            </div>
-            <div class="service">
-                <h3>Cybersecurity</h3>
-                <p>Comprehensive security measures to protect your digital assets and communications.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stat-item">
-            <span class="counter" data-target="5">0</span>
-            <p>Years of Innovation</p>
-        </div>
-        <div class="stat-item">
-            <span class="counter" data-target="500">0</span>
-            <p>Projects Delivered</p>
-        </div>
-        <div class="stat-item">
-            <span class="counter" data-target="24">0</span>
-            <p>Hours of Support</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Contact us: <a href="mailto:info@ilsatec.com">info@ilsatec.com</a></p>
-        <p>© 2025 iLSATEC. All rights reserved.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Contact us: <a href="mailto:info@ilsatec.com" style="color: #ffffff;">info@ilsatec.com</a></p>
+        <p>Address: Hohenstaufenstraße 14, 60327 Frankfurt am Main, Germany</p>
+        <p>&copy; 2024 iLSATEC. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
