@@ -3,64 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iLSATEC - Advanced Telecom & IT Solutions</title>
+    <title>iLSATEC - Telecom & IT Excellence</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section with Video Background -->
+    <!-- Hero Section -->
     <section class="hero">
-        <video autoplay muted loop id="myVideo">
-            <source src="rain.mp4" type="video/mp4">
-        </video>
-        <div class="content">
-            <h1>Advanced Telecom & IT Solutions for a Connected Future</h1>
-            <p>Experts in 5G, OpenStack, MEC, and More for Global Businesses</p>
-            <button class="cta">Explore Services</button>
+        <div class="hero-content">
+            <h1>Powering Tomorrow with Telecom & IT Excellence</h1>
+            <p>From 5G to OpenStack, we deliver innovative solutions worldwide.</p>
+            <button class="cta">Discover More</button>
         </div>
     </section>
 
-    <!-- Service Tiles -->
+    <!-- Services Section -->
     <section class="services">
-        <h2>Our Services</h2>
-        <div class="tiles-container">
-            <div class="tile">
-                <div class="tile-primary">Cloud Infra (OpenStack)</div>
-                <div class="tile-secondary" style="display: none;">Scalable cloud solutions for businesses.</div>
+        <h2>Our Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-front">Cloud & Data Solutions</div>
+                <div class="card-back">OpenStack, MEC, Data Center Services</div>
             </div>
-            <!-- Add more tiles for MEC, 5G, GSM-R, etc. -->
+            <div class="service-card">
+                <div class="card-front">Telecom Solutions</div>
+                <div class="card-back">5G, FRMCS, GSM-R, IoT Testing</div>
+            </div>
+            <div class="service-card">
+                <div class="card-front">Support & Consulting</div>
+                <div class="card-back">Customer Support, Manpower Consultancy, Installation</div>
+            </div>
+            <div class="service-card">
+                <div class="card-front">DevOps & Security</div>
+                <div class="card-back">Git, Agile, Cybersecurity</div>
+            </div>
         </div>
     </section>
 
     <!-- Stats Section -->
     <section class="stats">
-        <div class="counter" data-counter-time="1000">5</div>
-        <div class="counter" data-counter-time="1000">500</div>
-        <!-- Add labels like "Years in Innovation", "Projects Completed" -->
-    </section>
-
-    <!-- Partnership Highlight -->
-    <section class="partnership">
-        <h2>Trusted Partner in Germany</h2>
-        <div class="map">Map of Germany here</div>
-        <p>Based in Frankfurt, serving European markets.</p>
-    </section>
-
-    <!-- Testimonials Carousel -->
-    <section class="testimonials">
-        <h2>What Our Clients Say</h2>
-        <div class="slider__slides">
-            <div class="slider__slide">Quote by John Doe, Owner</div>
-            <div class="slider__slide">Quote by Jane Smith, CEO</div>
+        <div class="stat-item">
+            <span class="counter" data-target="5">0</span>
+            <p>Years in Innovation</p>
         </div>
-        <button class="slider__button--prev">Prev</button>
-        <button class="slider__button--next">Next</button>
+        <div class="stat-item">
+            <span class="counter" data-target="500">0</span>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <span class="counter" data-target="24">0</span>
+            <p>Hours of Support</p>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="partnership">
+        <h2>Our Reach in Germany</h2>
+        <p>Based in Frankfurt, partnering across Europe for cutting-edge solutions.</p>
+        <p>Hohenstaufenstraße 14, 60327 Frankfurt am Main</p>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial">
+        <h2>Client Voices</h2>
+        <blockquote>
+            "iLSATEC transformed our infrastructure with unmatched expertise and innovation."
+            <cite>- Mona Singh, CEO</cite>
+        </blockquote>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>Contact us: info@ilsatec.com</p>
-        <p>Address: Hohenstaufenstraße 14, 60327 Frankfurt am Main, Germany</p>
-        <p>&copy; 2025 iLSATEC. All rights reserved.</p>
+    <footer class="footer">
+        <p>Contact: info@ilsatec.com</p>
+        <p>Hohenstaufenstraße 14, 60327 Frankfurt am Main, Germany</p>
+        <p>© 2025 iLSATEC. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
