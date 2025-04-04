@@ -4,100 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLSATEC - Telecom & IT Excellence</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </head>
-<body>
-    <!-- Header with Navigation -->
-    <header class="header">
-        <nav>
-            <a href="index.html" class="nav-link">Home</a>
-            <a href="about.html" class="nav-link">About Us</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header -->
+    <header class="p-5 bg-gray-800 shadow-lg">
+        <nav class="flex justify-between items-center max-w-6xl mx-auto">
+            <h1 class="text-2xl font-bold text-blue-400">iLSATEC</h1>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About Us</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact</a>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Driving Innovation in Telecom & IT</h1>
-            <p>At iLSATEC, we empower businesses worldwide with cutting-edge solutions in telecommunications, cloud infrastructure, and IT services. From 5G networks to sustainable green data centers, our expertise ensures your success in a connected future.</p>
-            <button class="cta">Explore Our Verticals</button>
+    <section class="flex flex-col items-center text-center py-20">
+        <h1 class="text-4xl font-bold animate-fadeIn">Driving Innovation in Telecom & IT</h1>
+        <p class="text-lg text-gray-400 mt-4">Empowering businesses with 5G, GSM-R, IoT, and cloud solutions.</p>
+        <button class="mt-6 px-6 py-2 bg-blue-500 rounded-lg hover:bg-blue-700 transition">Explore Verticals</button>
+    </section>
+
+    <!-- Verticals -->
+    <section class="max-w-6xl mx-auto py-10">
+        <h2 class="text-3xl font-semibold text-center mb-6">Verticals We Operate</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-5 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold">Cloud & Data Solutions</h3>
+                <p class="text-gray-400">OpenStack, Edge Computing & Data Centers.</p>
+            </div>
+            <div class="p-5 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold">Telecom & IoT</h3>
+                <p class="text-gray-400">5G, GSM-R, FRMCS, IoT Testing & Connectivity.</p>
+            </div>
+            <div class="p-5 bg-gray-800 rounded-lg shadow-lg hover:scale-105 transition">
+                <h3 class="text-xl font-bold">Cybersecurity</h3>
+                <p class="text-gray-400">Secure Networks, Encryption, and Compliance.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Verticals We Operate -->
-    <section class="verticals">
-        <h2>Verticals We Operate</h2>
-        <div class="vertical-item cloud">
-            <h3>Cloud & Data Solutions</h3>
-            <p>Leverage our expertise in OpenStack for scalable cloud infrastructure, Multi-Access Edge Computing (MEC) for low-latency applications, and comprehensive Data Center Services to optimize your IT environment.</p>
+    <!-- Stats -->
+    <section class="flex justify-center space-x-10 py-10">
+        <div class="text-center">
+            <span class="text-3xl font-bold counter" data-target="5">0</span>
+            <p class="text-gray-400">Years of Innovation</p>
         </div>
-        <div class="vertical-item telecom">
-            <h3>Telecom Solutions</h3>
-            <p>We specialize in 5G, FRMCS, and GSM-R solutions for railway communications, alongside IoT testing to ensure device reliability and network performance across modern telecom ecosystems.</p>
+        <div class="text-center">
+            <span class="text-3xl font-bold counter" data-target="500">0</span>
+            <p class="text-gray-400">Projects Delivered</p>
         </div>
-        <div class="vertical-item support">
-            <h3>Support & Consulting</h3>
-            <p>Our 24/7 Customer Support, Manpower Consultancy, and Installation Services provide end-to-end assistance, from telecom lab setups to seamless network deployments tailored to your needs.</p>
+        <div class="text-center">
+            <span class="text-3xl font-bold counter" data-target="24">0</span>
+            <p class="text-gray-400">Hours of Support</p>
         </div>
-        <div class="vertical-item devops">
-            <h3>DevOps & Security</h3>
-            <p>With Git-based DevOps and Agile project management, we streamline development processes while delivering robust solutions for operational efficiency.</p>
-        </div>
-        <div class="vertical-item solar">
-            <h3>Solar Solutions</h3>
-            <p>We provide solar energy integration for IT infrastructure, reducing carbon footprints and powering telecom networks with renewable energy sources.</p>
-        </div>
-        <div class="vertical-item cybersecurity">
-            <h3>Cybersecurity</h3>
-            <p>Our advanced cybersecurity services protect your networks and data from threats, ensuring compliance and resilience with state-of-the-art encryption and monitoring.</p>
-        </div>
-        <div class="vertical-item sustainability">
-            <h3>Sustainability</h3>
-            <p>We promote eco-friendly practices, offering sustainable IT solutions that minimize environmental impact while maximizing efficiency and performance.</p>
-        </div>
-        <div class="vertical-item green-data">
-            <h3>Green Data Center Solutions</h3>
-            <p>Our green data centers utilize energy-efficient cooling and renewable power, delivering high-performance computing with a focus on environmental responsibility.</p>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stat-item">
-            <span class="counter" data-target="5">0</span>
-            <p>Years of Innovation</p>
-        </div>
-        <div class="stat-item">
-            <span class="counter" data-target="500">0</span>
-            <p>Projects Delivered</p>
-        </div>
-        <div class="stat-item">
-            <span class="counter" data-target="24">0</span>
-            <p>Hours of Support</p>
-        </div>
-    </section>
-
-    <!-- Partnership Section -->
-    <section class="partnership">
-        <h2>Our Partnership in Germany</h2>
-        <p>Headquartered at Hohenstaufenstraße 14, 60327 Frankfurt am Main, we collaborate with leading European firms to deliver state-of-the-art telecom and IT solutions, strengthening connectivity across the continent.</p>
-    </section>
-
-    <!-- Vision Section -->
-    <section class="vision">
-        <h2>Our Vision</h2>
-        <p>We envision a world where technology drives sustainability and connectivity, blending innovation with responsibility to empower businesses and communities for a brighter, greener future.</p>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <p><a href="mailto:info@ilsatec.com">Contact: info@ilsatec.com</a></p>
-        <p>Hohenstaufenstraße 14, 60327 Frankfurt am Main, Germany</p>
-        <p><a href="about.html">About Us</a> | <a href="contact.html">Contact</a></p>
+    <footer class="bg-gray-800 text-center p-5">
+        <p>Contact: <a href="mailto:info@ilsatec.com" class="text-blue-400">info@ilsatec.com</a></p>
         <p>© 2025 iLSATEC. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- GSAP Animation Script -->
+    <script>
+        // Smooth load animation
+        gsap.from("h1, p, button", { opacity: 0, y: 30, duration: 1, stagger: 0.3 });
+
+        // Counter animation for stats
+        document.querySelectorAll('.counter').forEach(counter => {
+            let updateCount = () => {
+                let target = +counter.getAttribute('data-target');
+                let count = +counter.innerText;
+                let speed = target / 100;
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + speed);
+                    setTimeout(updateCount, 50);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    </script>
+
 </body>
 </html>
