@@ -1,65 +1,35 @@
-// Tile Expand on Hover
-document.querySelectorAll('.tile').forEach(tile => {
-    tile.addEventListener('mouseover', () => {
-        tile.querySelector('.tile-secondary').style.display = 'block';
-    });
-    tile.addEventListener('mouseout', () => {
-        tile.querySelector('.tile-secondary').style.display = 'none';
-    });
-});
-
-// Animated Counter on Scroll
+// Animate Counters on Scroll
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-        counter.counterAlreadyFired = false;
-        counter.counterSpeed = parseInt(counter.dataset.counterTime) / 45;
-        counter.counterTarget = parseInt(counter.innerText);
-        counter.counterCount = 0;
-        counter.counterStep = counter.counterTarget / counter.counterSpeed;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                let count = 0;
+                const speed = 50; // Animation speed
 
-        function updateCounter() {
-            if (counter.counterCount < counter.counterTarget) {
-                counter.counterCount += counter.counterStep;
-                counter.innerText = Math.ceil(counter.counterCount);
-                setTimeout(updateCounter, counter.counterSpeed);
-            }
-        }
-
-        function isElementVisible(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientHeight)
-            );
-        }
-
-        function handleScroll() {
-            if (!counter.counterAlreadyFired && isElementVisible(counter)) {
+                const updateCounter = () => {
+                    if (count < target) {
+                        count += Math.ceil(target / speed);
+                        counter.textContent = count > target ? target : count;
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
                 updateCounter();
-                counter.counterAlreadyFired = true;
+                observer.unobserve(counter); // Stop observing after animation
             }
-        }
+        });
+    }, { threshold: 0.5 });
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll(); // Initial check
+    counters.forEach(counter => observer.observe(counter));
+});
+
+// Toggle Service Cards on Touch for Mobile
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('touchstart', () => {
+        card.classList.toggle('flipped');
     });
-});
-
-// Testimonial Carousel
-const slides = document.querySelector('.slider__slides');
-const prevButton = document.querySelector('.slider__button--prev');
-const nextButton = document.querySelector('.slider__button--next');
-let counter = 1;
-const slideWidth = slides.children[0].offsetWidth;
-
-nextButton.addEventListener('click', () => {
-    counter++;
-    slides.style.transform = `translateX(-${slideWidth * counter}px)`;
-});
-prevButton.addEventListener('click', () => {
-    counter--;
-    slides.style.transform = `translateX(-${slideWidth * counter}px)`;
 });
