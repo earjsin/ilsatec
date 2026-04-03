@@ -829,6 +829,129 @@ strong {
     color: var(--text-gray);
 }
 
+.about-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+}
+
+/* ============================================
+   COMMUNITY UPLIFTMENT
+   ============================================ */
+
+.community-upliftment {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-navy) 100%);
+}
+
+.community-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.community-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.025rem;
+    line-height: 1.8;
+}
+
+.community-text h3 {
+    color: var(--accent-orange);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.community-programs {
+    margin: 2rem 0;
+}
+
+.program {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--accent-cyan);
+    transition: var(--transition);
+}
+
+.program:hover {
+    background: rgba(255, 107, 53, 0.1);
+    border-left-color: var(--accent-orange);
+}
+
+.program h4 {
+    color: var(--accent-cyan);
+    margin-bottom: 0.5rem;
+}
+
+.community-message {
+    font-style: italic;
+    color: var(--accent-orange);
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.community-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.community-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-lg);
+}
+
+/* ============================================
+   INFRASTRUCTURE
+   ============================================ */
+
+.infrastructure {
+    padding: 5rem 0;
+    background: var(--primary-dark);
+}
+
+.infrastructure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.infrastructure-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(34, 211, 238, 0.1);
+    transition: var(--transition);
+}
+
+.infrastructure-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-orange);
+}
+
+.infrastructure-item h3 {
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.infrastructure-item p {
+    color: var(--text-gray);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -945,7 +1068,8 @@ strong {
     .ai-content,
     .railways-content,
     .impact-content,
-    .about-content {
+    .about-content,
+    .community-content {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
