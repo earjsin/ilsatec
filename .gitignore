@@ -1,0 +1,43 @@
+# iLSATEC .gitignore
+# Prevents accidentally committing sensitive files
+
+# Environment variables and secrets
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.log
+*.debug
+
+# Dependencies (if you add Node.js later)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Security files with sensitive info
+security-credentials.txt
+.well-known/*/secret*
+
+# Backup files
+*.bak
+*.tmp
+*.backup
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride

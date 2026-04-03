@@ -1,0 +1,16 @@
+# iLSATEC Security Vulnerability Reporting
+# Located at: /.well-known/security.txt
+# Reference: https://securitytxt.org/
+
+Contact: mailto:security@ilsatec.com
+Expires: 2027-04-03T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://earjsin.github.io/ilsatec/.well-known/security.txt
+Policy: https://github.com/earjsin/ilsatec/blob/main/SECURITY.md
+Acknowledgments: https://github.com/earjsin/ilsatec/security/advisories
+
+# If you discover a security vulnerability:
+# 1. Report it responsibly at: security@ilsatec.com
+# 2. Include vulnerability details and reproduction steps
+# 3. Allow 90 days for patching before public disclosure
+# 4. Do NOT open public GitHub issues for security bugs

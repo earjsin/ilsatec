@@ -1,0 +1,18 @@
+# iLSATEC Website - Robots.txt
+# Controls which parts of the site search engines can crawl
+
+# Allow all robots access by default
+User-agent: *
+Allow: /
+
+# Deny access to sensitive files
+Disallow: /.well-known/
+Disallow: /SECURITY.md
+Disallow: /.git
+Disallow: *.log
+
+# Crawl delay to reduce server load (optional)
+Crawl-delay: 1
+
+# Sitemap reference (add when sitemap is created)
+# Sitemap: https://earjsin.github.io/ilsatec/sitemap.xml

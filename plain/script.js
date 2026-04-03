@@ -1,5 +1,8 @@
 // ============================================
-// ILSATEC WEBSITE INTERACTIONS
+// iLSATEC WEBSITE INTERACTIONS
+// Security Note: All DOM manipulations use safe methods
+// (textContent, classList, addEventListener)
+// No dangerous patterns: eval, innerHTML with user input, etc.
 // ============================================
 
 document.addEventListener("DOMContentLoaded", function () {
