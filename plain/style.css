@@ -154,6 +154,34 @@ strong {
     font-weight: 700;
     color: var(--accent-cyan);
     letter-spacing: -0.02em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.brand-i {
+    color: var(--accent-orange);
+    font-weight: 800;
+    margin: 0 1px;
+    font-size: 1.8rem;
+    line-height: 1;
+    display: inline-block;
+    animation: pulseBrandI 2s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes pulseBrandI {
+
+    0%,
+    100% {
+        transform: scale(1);
+        text-shadow: 0 0 0 rgba(255, 107, 53, 0);
+    }
+
+    50% {
+        transform: scale(1.15);
+        text-shadow: 0 0 12px rgba(255, 107, 53, 0.6),
+            0 0 25px rgba(255, 107, 53, 0.3);
+    }
 }
 
 .brand-tagline {
@@ -430,6 +458,24 @@ strong {
     border-radius: var(--border-radius-lg);
     border: 1px solid rgba(34, 211, 238, 0.1);
     backdrop-filter: blur(10px);
+    transition: var(--transition);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.vision-card {
+    animation-delay: 0.1s;
+}
+
+.mission-card {
+    animation-delay: 0.2s;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 25px rgba(34, 211, 238, 0.2);
+    background: rgba(34, 211, 238, 0.08);
 }
 
 .vision-card h3,
@@ -459,11 +505,30 @@ strong {
     border-radius: var(--border-radius);
     border: 1px solid rgba(255, 107, 53, 0.1);
     transition: var(--transition);
+    animation: fadeInUp 0.7s ease-out;
+}
+
+.value-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.value-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.value-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.value-item:nth-child(4) {
+    animation-delay: 0.4s;
 }
 
 .value-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--accent-orange);
+    box-shadow: 0 0 25px rgba(255, 107, 53, 0.2);
+    background: rgba(255, 107, 53, 0.05);
 }
 
 .value-icon {
@@ -499,12 +564,38 @@ strong {
     border: 1px solid rgba(34, 211, 238, 0.1);
     transition: var(--transition);
     text-align: center;
+    animation: bounceIn 0.6s ease-out;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 0.05s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.15s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(5) {
+    animation-delay: 0.25s;
+}
+
+.service-card:nth-child(6) {
+    animation-delay: 0.3s;
 }
 
 .service-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     border-color: var(--accent-cyan);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 0 30px rgba(34, 211, 238, 0.4), var(--shadow-lg);
+    background: rgba(34, 211, 238, 0.05);
 }
 
 .service-icon {
@@ -1057,6 +1148,154 @@ strong {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes glowPulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(34, 211, 238, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(34, 211, 238, 0.6);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ============================================
+   ANIMATION CLASSES
+   ============================================ */
+
+.animate-on-scroll {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+}
+
+.hero-content {
+    animation: slideInLeft 1s ease-out;
+}
+
+.hero-visual {
+    animation: slideInRight 1s ease-out;
+}
+
+.service-card {
+    animation: bounceIn 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.service-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.service-card:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.service-card:hover {
+    animation: glowPulse 2s infinite;
+}
+
+.btn-primary {
+    animation: float 3s ease-in-out infinite;
+}
+
+.step {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.step:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.step:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.step:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.step:nth-child(4) {
+    animation-delay: 0.4s;
 }
 
 /* ============================================
