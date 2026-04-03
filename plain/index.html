@@ -4,46 +4,436 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iLSATEC - Plain Version</title>
+    <meta name="description"
+        content="ILSATEC - Intelligent Telecom & AI Consulting. Building intelligent telecom solutions with agentic AI for networks, railways, and critical infrastructure.">
+    <meta name="keywords"
+        content="telecom consulting, AI solutions, agentic AI, network optimization, railway technology, Germany, India">
+    <title>ILSATEC - Intelligent Telecom & AI Consulting</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>iLSATEC - Plain Version</h1>
-        <p>A simplified version of our telecom solutions website</p>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">ILSATEC</span>
+                <span class="brand-tagline">Intelligent Telecom & AI</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#vision">Vision</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#ai">Agentic AI</a></li>
+                <li><a href="#railways">Railways</a></li>
+                <li><a href="#usecases">Use Cases</a></li>
+                <li><a href="#impact">Social Impact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html" class="cta-nav">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section>
-            <h2>Welcome to iLSATEC</h2>
-            <p>This is a plain, clean version of our website. We're building something new here!</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Building Intelligent Telecom & AI Solutions
+                <span class="hero-accent">– Made in Germany with Love</span>
+            </h1>
+            <p class="hero-subtitle">
+                ILSATEC partners with operators, railways, and enterprises to design, build, and operate
+                high-performance networks powered by <strong>agentic AI</strong>, data, and a deep understanding of
+                people.
+            </p>
+            <div class="hero-buttons">
+                <a href="contact.html" class="btn btn-primary">Talk to an Expert</a>
+                <a href="#ai" class="btn btn-secondary">Explore AI Use Cases</a>
+            </div>
+            <p class="hero-support">Trusted consulting for telecom, rail, and critical infrastructure.</p>
+        </div>
+        <div class="hero-visual">
+            <!-- Network connectivity illustration placeholder -->
+            <div class="network-graphic">
+                <div class="node central"></div>
+                <div class="node edge"></div>
+                <div class="node edge"></div>
+                <div class="node edge"></div>
+                <div class="connection"></div>
+                <div class="connection"></div>
+                <div class="connection"></div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Our Services</h3>
-            <ul>
-                <li>GSM-R Solutions</li>
-                <li>IoT Testing</li>
-                <li>Telecom Lab Setup</li>
-                <li>Installation & Commissioning</li>
-                <li>Testing as a Service</li>
-                <li>Project Management & Agile</li>
-                <li>Git & DevOps</li>
-                <li>Cybersecurity</li>
-                <li>IP Networking</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Vision & Mission Section -->
+    <section id="vision" class="vision-mission">
+        <div class="container">
+            <h2 class="section-title">Vision & Mission</h2>
+            <div class="vision-grid">
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p>Our vision is to create a world where every connection is intelligent, resilient, and
+                        human-centric – enabling people, businesses, and societies to thrive in a hyper-connected
+                        future.</p>
+                </div>
+                <div class="mission-card">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to help telecoms, railways, and infrastructure providers design and operate
+                        smarter networks using AI, automation, and engineering excellence. We combine German quality,
+                        global experience, and a strong ethical compass to deliver solutions that are reliable, secure,
+                        and sustainable.</p>
+                </div>
+            </div>
+            <div class="core-values">
+                <h3>Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">🚀</div>
+                        <h4>Innovation</h4>
+                        <p>Pushing boundaries with cutting-edge AI and telecom solutions</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🛡️</div>
+                        <h4>Integrity</h4>
+                        <p>Building trust through transparency and ethical practices</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">💡</div>
+                        <h4>Impact</h4>
+                        <p>Creating meaningful change for people and communities</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤝</div>
+                        <h4>Collaboration</h4>
+                        <p>Working together to achieve extraordinary results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>Contact: <a href="mailto:info@ilsatec.com">info@ilsatec.com</a></p>
-        <p>&copy; 2024 iLSATEC. All rights reserved.</p>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <p class="section-subtitle">Telecom & Consulting Excellence</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Telecom Strategy & Architecture</h3>
+                    <p>From 4G/5G to cloud-native cores, we design end-to-end architectures that balance performance,
+                        cost, and future-proof flexibility.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Network Planning & Optimization</h3>
+                    <p>We use data-driven methods and AI-assisted tools to optimize coverage, capacity, and quality of
+                        experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Operations & Automation</h3>
+                    <p>We help build autonomous, intent-driven operations with agentic AI, zero-touch workflows, and
+                        closed-loop assurance.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔗</div>
+                    <h3>Digital Platforms & Integration</h3>
+                    <p>From APIs to OSS/BSS integration, we connect your legacy assets with modern digital platforms.
+                    </p>
+                </div>
+            </div>
+            <p class="services-note">We work with operators, vendors, and enterprises as a neutral, trusted advisor.</p>
+        </div>
+    </section>
+
+    <!-- Agentic AI Section -->
+    <section id="ai" class="agentic-ai">
+        <div class="container">
+            <h2 class="section-title">Agentic AI: From Data to Decisions</h2>
+            <div class="ai-content">
+                <div class="ai-text">
+                    <p>Agentic AI represents the next evolution in artificial intelligence – systems that don't just
+                        analyze data, but actively sense, understand, decide, and learn to optimize network operations
+                        and business outcomes.</p>
+                    <p>In telecom, agentic AI transforms reactive maintenance into proactive optimization, turning
+                        network data into actionable intelligence that improves reliability, reduces costs, and enhances
+                        customer experience.</p>
+                    <p>Our approach combines deep telecom domain knowledge with cutting-edge AI capabilities to deliver
+                        practical, production-ready solutions that operators can trust.</p>
+                </div>
+                <div class="ai-workflow">
+                    <h3>The Agentic AI Workflow</h3>
+                    <div class="workflow-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Sense</h4>
+                            <p>Ingest network, IT, and business data in real time</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>Understand</h4>
+                            <p>Use AI agents for diagnosis, pattern recognition, and prediction</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>Decide</h4>
+                            <p>Recommend or execute actions aligned with operator intent</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Learn</h4>
+                            <p>Continuously improve from feedback and outcomes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-usecases">
+                <h3>Use Cases</h3>
+                <div class="usecase-grid">
+                    <div class="usecase-item">🔍 Root cause analysis & anomaly detection</div>
+                    <div class="usecase-item">🎫 Automated ticketing & remediation</div>
+                    <div class="usecase-item">📈 SLA assurance & service analytics</div>
+                    <div class="usecase-item">📊 Network capacity planning and optimization</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI in Railways Section -->
+    <section id="railways" class="railways">
+        <div class="container">
+            <h2 class="section-title">AI in Railways & Critical Infrastructure</h2>
+            <div class="railways-content">
+                <div class="railways-text">
+                    <p>Railways demand uncompromising reliability and safety. Our AI solutions bring telecom-grade
+                        intelligence to rail operations, enabling predictive maintenance, real-time monitoring, and
+                        intelligent decision-making that keeps passengers safe and operations efficient.</p>
+                    <div class="railway-features">
+                        <div class="feature">
+                            <h4>🚂 Predictive maintenance for rolling stock and track assets</h4>
+                            <p>AI-powered analysis of sensor data to predict failures before they occur</p>
+                        </div>
+                        <div class="feature">
+                            <h4>📡 Real-time monitoring of communications and signaling networks</h4>
+                            <p>Continuous oversight of critical rail communication systems</p>
+                        </div>
+                        <div class="feature">
+                            <h4>👥 Passenger information and incident management with AI assistants</h4>
+                            <p>Intelligent systems for passenger services and emergency response</p>
+                        </div>
+                        <div class="feature">
+                            <h4>⚡ Energy optimization and safety analytics</h4>
+                            <p>Efficient power management and comprehensive safety monitoring</p>
+                        </div>
+                    </div>
+                    <p class="railways-tagline">We bring telecom-grade reliability and AI innovation into rail and
+                        mission-critical environments.</p>
+                </div>
+                <div class="railways-visual">
+                    <!-- Railway illustration placeholder -->
+                    <div class="train-graphic">
+                        <div class="track"></div>
+                        <div class="train"></div>
+                        <div class="signals"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Use Cases Section -->
+    <section id="usecases" class="usecases">
+        <div class="container">
+            <h2 class="section-title">AI Use Cases Library</h2>
+            <p class="section-subtitle">Practical AI Solutions for Telecom & Infrastructure</p>
+            <div class="usecases-grid">
+                <div class="usecase-card">
+                    <div class="usecase-icon">🌐</div>
+                    <h3>Network & IT Operations</h3>
+                    <p>Automated network configuration, fault detection, and performance optimization using AI-driven
+                        insights and self-healing systems.</p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">👤</div>
+                    <h3>Customer Experience</h3>
+                    <p>Personalized service recommendations, proactive issue resolution, and intelligent chatbots that
+                        understand context and intent.</p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">🔒</div>
+                    <h3>Security & Fraud Detection</h3>
+                    <p>Real-time threat analysis, anomaly detection in network traffic, and automated response to
+                        security incidents.</p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">👷</div>
+                    <h3>Field Workforce Support</h3>
+                    <p>AI-powered scheduling, route optimization, and augmented reality assistance for field technicians
+                        and engineers.</p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">📊</div>
+                    <h3>Business Intelligence</h3>
+                    <p>Automated reporting, predictive analytics, and strategic insights derived from network and
+                        operational data.</p>
+                </div>
+                <div class="usecase-card">
+                    <div class="usecase-icon">🚆</div>
+                    <h3>Railway Asset Management</h3>
+                    <p>Predictive maintenance scheduling, track condition monitoring, and rolling stock lifecycle
+                        optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Impact Section -->
+    <section id="impact" class="social-impact">
+        <div class="container">
+            <h2 class="section-title">Our Social and Society Work</h2>
+            <p class="impact-intro">Technology means little if it does not serve people. At ILSATEC, we actively support
+                initiatives that protect life, culture, and dignity.</p>
+
+            <div class="impact-content">
+                <div class="impact-text">
+                    <h3>Supporting Gaoshala & Seva Sansthan in India</h3>
+                    <div class="impact-initiatives">
+                        <div class="initiative">
+                            <h4>🐄 Gaoshala Initiatives</h4>
+                            <p>We contribute to Gaoshala initiatives that protect and care for cows, supporting
+                                traditional rural livelihoods and sustainable agriculture.</p>
+                        </div>
+                        <div class="initiative">
+                            <h4>🤝 Seva Sansthan Organizations</h4>
+                            <p>We support Seva Sansthan organizations focused on education, healthcare, and community
+                                upliftment for those in need.</p>
+                        </div>
+                    </div>
+                    <p class="impact-tagline">Made in Germany with love – and with a heart that beats for India.</p>
+                </div>
+                <div class="impact-visual">
+                    <!-- Social impact illustration placeholder -->
+                    <div class="heart-map">
+                        <div class="heart"></div>
+                        <div class="map-connection"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ILSATEC Section -->
+    <section class="why-ilsatec">
+        <div class="container">
+            <h2 class="section-title">Why ILSATEC?</h2>
+            <div class="comparison-table">
+                <div class="table-header">
+                    <div class="aspect">Aspect</div>
+                    <div class="ilsatec">ILSATEC Approach</div>
+                    <div class="typical">Typical Consulting Firm</div>
+                </div>
+                <div class="table-row">
+                    <div class="aspect">Domain Focus</div>
+                    <div class="ilsatec">Deep telecom, rail, and infrastructure expertise</div>
+                    <div class="typical">Generalist across many industries</div>
+                </div>
+                <div class="table-row">
+                    <div class="aspect">AI Maturity</div>
+                    <div class="ilsatec">Practical agentic AI solutions, not buzzwords</div>
+                    <div class="typical">PowerPoint-level AI, little implementation</div>
+                </div>
+                <div class="table-row">
+                    <div class="aspect">Engagement Style</div>
+                    <div class="ilsatec">Hands-on, engineering-driven, co-creation with clients</div>
+                    <div class="typical">Top-down, slide-heavy, limited execution</div>
+                </div>
+                <div class="table-row">
+                    <div class="aspect">Social Responsibility</div>
+                    <div class="ilsatec">Supports Gaoshala and Seva initiatives in India</div>
+                    <div class="typical">CSR often abstract or distant</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About ILSATEC</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ILSATEC is a consulting and technology company focused on telecom, AI, and rail/infrastructure
+                        solutions. We combine deep technical expertise with practical business acumen to help
+                        organizations navigate the complexities of digital transformation.</p>
+                    <p>Based in Germany with a global mindset, our multicultural team brings together engineering
+                        excellence, AI innovation, and a strong connection to Indian culture and values. We believe in
+                        technology that serves humanity and creates lasting positive impact.</p>
+                </div>
+                <div class="team-preview">
+                    <h3>Leadership Team</h3>
+                    <div class="team-member">
+                        <div class="member-avatar">👨‍💼</div>
+                        <h4>Arjun Singh</h4>
+                        <p class="member-title">Founder & CEO</p>
+                        <p class="member-bio">Telecom engineer with 15+ years experience in network architecture and AI
+                            solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ILSATEC</h3>
+                    <p>Intelligent Telecom & AI Consulting</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <a href="#services">Telecom Strategy</a>
+                        <a href="#services">Network Optimization</a>
+                        <a href="#ai">Agentic AI</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Solutions</h4>
+                        <a href="#railways">Railways</a>
+                        <a href="#usecases">AI Use Cases</a>
+                        <a href="#impact">Social Impact</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Company</h4>
+                        <a href="#about">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="#vision">Vision</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>Made in Germany with love. Connected to India.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Email">✉️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
